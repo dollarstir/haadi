@@ -26,4 +26,5 @@ Then open `http://localhost:8080`.
 - **Global styles:** `docs/assets/css/style.css`
 - **Nav / footer:** `docs/partials/header.html`, `docs/partials/footer.html`
 - **Loader script:** `docs/assets/js/load-partials.js`
-- **PDFs / slides:** place files in `docs/assets/files/` and link from the relevant page
+- **PDFs / slides:** place files in `docs/assets/files/` and link from the relevant page. Artifact detail pages expect these names (change if you prefer):
+  - `artifact-01-staff-meeting-agenda.pdf` … `artifact-10-career-readiness.pdf` (see each artifact page for the exact filename).
