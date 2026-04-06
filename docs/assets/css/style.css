@@ -419,18 +419,24 @@ main {
   }
 }
 
-.portrait--photo {
-  padding: 0;
+.portrait.portrait--photo {
+  display: block;
+  position: relative;
   overflow: hidden;
+  padding: 0;
   font-size: 0;
   line-height: 0;
+  border-radius: 50%;
+  aspect-ratio: 1;
 }
 
 .portrait--photo img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
+  border-radius: 50%;
 }
 
 /* ——— Cards grid ——— */
