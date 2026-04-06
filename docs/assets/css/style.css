@@ -793,6 +793,7 @@ main {
 
 .artifact-preview {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1.35rem 1.5rem;
   background: var(--bg-card);
