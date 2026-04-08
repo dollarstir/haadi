@@ -984,3 +984,113 @@ main {
   font-weight: 600;
   line-height: 1.5;
 }
+
+/* ——— Philosophy media layout ——— */
+.philosophy-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.philosophy-block {
+  display: grid;
+  gap: 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem;
+}
+
+.philosophy-block__text h2 {
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  margin: 0 0 0.7rem;
+}
+
+.philosophy-block__text p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.philosophy-block__media img {
+  width: 100%;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 860px) {
+  .philosophy-block {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    padding: 1.35rem;
+  }
+
+  .philosophy-block--reverse {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .philosophy-block--reverse .philosophy-block__text {
+    order: 2;
+  }
+
+  .philosophy-block--reverse .philosophy-block__media {
+    order: 1;
+  }
+}
+
+/* ——— Professional development plan ——— */
+.toggle-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1.25rem 0;
+  overflow: hidden;
+}
+
+.toggle-card summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.toggle-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.toggle-card[open] summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 920px;
+}
+
+.plan-table th,
+.plan-table td {
+  border: 1px solid var(--border);
+  padding: 0.8rem;
+  vertical-align: top;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.plan-table th {
+  color: var(--text);
+  background: rgba(62, 207, 142, 0.08);
+  text-align: left;
+  font-weight: 700;
+}
+
+.plan-table--compact {
+  min-width: 760px;
+}
