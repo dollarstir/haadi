@@ -373,6 +373,46 @@ main {
   margin-bottom: 0.65rem;
 }
 
+.personality-panel {
+  margin: 0 0 2.2rem;
+  padding: 1.35rem 1.45rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 860px) {
+  .personality-panel {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
+
+.personality-panel h2 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--text);
+}
+
+.personality-panel p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.personality-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+}
+
+.personality-list li + li {
+  margin-top: 0.45rem;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -428,8 +468,8 @@ main {
 }
 
 .portrait {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: linear-gradient(145deg, var(--bg-card), var(--bg-elevated));
   border: 2px solid var(--border);
@@ -445,8 +485,8 @@ main {
 
 @media (min-width: 900px) {
   .portrait {
-    width: 260px;
-    height: 260px;
+    width: 300px;
+    height: 300px;
     font-size: 2.85rem;
   }
 }
@@ -469,6 +509,7 @@ main {
   object-fit: cover;
   object-position: center 20%;
   border-radius: 50%;
+  filter: brightness(1.12) contrast(1.06) saturate(1.05);
 }
 
 /* ——— Cards grid ——— */
@@ -524,6 +565,26 @@ main {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--accent);
+}
+
+.resume-download-panel {
+  margin-top: 2rem;
+  padding: 1.2rem 1.3rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.resume-download-panel h2 {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+
+.resume-download-panel p {
+  margin: 0 0 0.8rem;
+  color: var(--text-muted);
 }
 
 /* ——— Prose ——— */
@@ -596,6 +657,20 @@ main {
   font-size: 1rem;
 }
 
+.competency-matrix {
+  margin-top: 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.2rem 1.3rem;
+}
+
+.competency-matrix h2 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
 /* ——— Resume ——— */
 .resume {
   max-width: 52rem;
@@ -620,6 +695,10 @@ main {
 
 .resume-meta a {
   color: var(--accent);
+}
+
+.resume-download {
+  margin: 0.9rem 0 0;
 }
 
 .resume h2 {
@@ -800,6 +879,31 @@ main {
   gap: 1.15rem;
 }
 
+.artifact-guidance {
+  margin: 0 0 1.4rem;
+  padding: 1.2rem 1.35rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+}
+
+.artifact-guidance h2 {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+
+.artifact-guidance ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+}
+
+.artifact-guidance li + li {
+  margin-top: 0.4rem;
+}
+
 .artifact-preview {
   display: grid;
   grid-template-columns: 1fr;
@@ -846,6 +950,12 @@ main {
   line-height: 1.6;
 }
 
+.artifact-preview__meta {
+  margin-top: 0.55rem !important;
+  font-size: 0.9rem !important;
+  color: var(--gold) !important;
+}
+
 .artifact-preview__actions {
   display: flex;
   flex-direction: column;
@@ -876,6 +986,16 @@ main {
   color: var(--text-muted);
   text-decoration: none;
   margin-bottom: 1.25rem;
+}
+
+.competency-nav-link {
+  margin-top: 1.1rem;
+}
+
+.competency-nav-link .back-link {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: var(--accent);
 }
 
 .back-link:hover {
@@ -1012,6 +1132,14 @@ main {
 .philosophy-block__text p {
   margin: 0;
   color: var(--text-muted);
+}
+
+.philosophy-evidence-note {
+  margin-top: 0.7rem !important;
+  padding-top: 0.55rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.14);
+  font-size: 0.95rem;
+  color: var(--gold) !important;
 }
 
 .philosophy-block__media img {
